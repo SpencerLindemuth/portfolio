@@ -5,7 +5,7 @@ import StarRegular from '../../Images/star-regular.svg'
 let SectionTwo = (props) => {
     return (
         <div className="parallax Two">
-            <div className="content">
+            <div className="content hidden">
             <h1>About</h1>
             <h2 id="about">
                 I'm a JavaScript, React.js, and Rails web developer based in Seattle with some experience in Python, Java (and Android), C++, and PHP. I started programming in 2010 at the University of Michigan and have been involved in tech ever since. Whether working in the industry, spending my free time and days off learning a new language, or teaching myself Android app development. My brain craves the challenge of learning and problem solving while having a tangible result to be proud of. I have an artistic side with terrible painting skills so I express my creativity through design and photography.  
