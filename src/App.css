@@ -16,16 +16,20 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background: transparent;
 }
 
 .One{
   background-image: url("");
 }
 
-/* #bg-one{
-  position: ;
+#bg-one{
+  position: fixed;
   top: 0;
-} */
+  left: 0;
+  width: 100%;
+  z-index: 0;
+}
 
 .Two{
   background-image: url("./Images/two.jpg");
@@ -47,7 +51,10 @@
   animation: fade-in-top 1s;
 }
 
+
 .content{
+  position: relative;
+  z-index: 1;
   color: white;
   background-color: #282c34;
   height: fit-content;
@@ -69,6 +76,7 @@
   box-shadow: 0px 1px 15px black;
   padding-top: 2%;
   padding-bottom: 2%;
+  z-index: 1;
 }
 
 #navbarName{
