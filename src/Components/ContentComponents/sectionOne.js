@@ -16,7 +16,7 @@ export default class sectionOne extends React.Component{
                 description: "A website designed to teach CSS basics to people of all ages in an interactive learning environment",
                 url: "https://CSSchool.herokuapp.com",
                 gitUrl: "https://github.com/spencerlindemuth/CSSchool-frontend",
-                tech: ["JavaScript", "React", "Ruby On Rails Backend API", "JWT Authentication", "React-Markdown", "CSS", "HTML"]
+                tech: [{name: "JavaScript", use: "Dynamically add CSS styles on button click to Window stylesheet and general navigation"}, {name: "React", use: "Full front-end architecture creating single page application and render lessons"}, {name: "Ruby On Rails", use: "Restful API serves lesson components, including html and css to be applied and rendered on page load"}, {name: "JWT Authentication", use: "Securely login user accounts and verify accounts to save user progress"}, {name: "React-Markdown", use: "Renders plain text as HTML elements"}, {name: "CSS", use: "Site-wide styling and mobile responsiveness"}, {name: "HTML", use: "Site Structure and lesson formatting"}]
             },
             {
                 id: 2,
@@ -45,7 +45,14 @@ export default class sectionOne extends React.Component{
     expandedDiv = () => {
         let filter = this.state.projects.filter(project => project.id === this.state.expandedId)
         let filteredProject = filter[0]
-        return <div id="expandedCard"><ProjectCard title={filteredProject.title} background={filteredProject.image} id={filteredProject.id} description={filteredProject.description} url={filteredProject.url} gitUrl={filteredProject.gitUrl} technology={filteredProject.tech}/></div>
+        return <div id="expandedCard"><ProjectCard expandedBool={this.state.expanded} title={filteredProject.title} background={filteredProject.image} id={filteredProject.id} description={filteredProject.description} url={filteredProject.url} gitUrl={filteredProject.gitUrl} technology={filteredProject.tech} closeClick={this.closeClick}/></div>
+    }
+
+    closeClick = () => {
+        this.setState({
+            expanded: false,
+            expandedId: null,
+        })
     }
 
     render(){
