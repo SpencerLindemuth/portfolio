@@ -19,8 +19,13 @@
 }
 
 .One{
-  background-image: url("./Images/hello.jpg");
+  background-image: url("");
 }
+
+/* #bg-one{
+  position: ;
+  top: 0;
+} */
 
 .Two{
   background-image: url("./Images/two.jpg");
@@ -176,7 +181,7 @@
 .rating img{
   color: white;
   max-width: 15%;
-  animation: spin 8s linear infinite;
+  animation: spin 3s linear infinite;
   animation-play-state: paused;
 }
 
@@ -193,7 +198,19 @@
 }
 
 @keyframes spin {
-  100% {transform: rotate(1turn);}
+  /* 100% {transform: rotate(1turn);} */
+  0% {transform: scale3d(1, 1, 1)}
+  10% {transform: scale3d(.9, .9, .9)}
+  20% {transform: scale3d(.8, .8, .8)}
+  30% {transform: scale3d(.75, .75, .75)}
+  40% {transform: scale3d(.8, .8, .8)}
+  50% {transform: scale3d(.9, .9, .9)}
+  60% {transform: scale3d(1, 1, 1)}
+  70% {transform: scale3d(1.1, 1.1, 1.1)}
+  80% {transform: scale3d(1.15, 1.15, 1.15)}
+  90% {transform: scale3d(1.1, 1.1, 1.1)}
+  100% {transform: scale3d(1, 1, 1)}
+
 }
 
 @keyframes fade-in {

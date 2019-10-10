@@ -3,6 +3,7 @@ import ProjectCard from '../ViewComponents/projectCard'
 import artsyfartsy from '../../Images/artsyfartsy.PNG'
 import csschool from '../../Images/csschool.PNG'
 import hilo from '../../Images/hilo.PNG'
+import starvideo from '../../Images/starvideo.mp4'
 
 export default class sectionOne extends React.Component{
 
@@ -50,6 +51,7 @@ export default class sectionOne extends React.Component{
     render(){
         return (
             <div className="parallax One">
+                <video src={starvideo} type="video/mp4" autoPlay={true} id="bg-one" loop={true} preload={true}/>
                 <div className="content hidden">
                     <h1>Projects</h1>
                     {!this.state.expanded ? <div id="projectGrid">{this.state.projects.map(project => {
