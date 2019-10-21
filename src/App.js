@@ -28,20 +28,20 @@ export default class App extends React.Component {
             element.classList.add('fade-in-element');
             element.classList.remove('hidden');
           }
-          else if(positionFromBottom * windowHeight >=0 && positionFromTop - windowHeight <= 0){
-            element.classList.add('fade-in-element-top');
-            element.classList.remove('hidden');
-          }
-          if(positionFromTop - windowHeight > 0){
-            element.classList.add('hidden');
-            element.classList.remove('fade-in-element');
-            element.classList.remove('fade-in-element-top');
-          }
-          if(positionFromBottom < 0){
-            element.classList.add('hidden');
-            element.classList.remove('fade-in-element');
-            element.classList.remove('fade-in-element-top');
-          }
+          // else if(positionFromBottom * windowHeight >=0 && positionFromTop - windowHeight <= 0){
+          //   element.classList.add('fade-in-element-top');
+          //   element.classList.remove('hidden');
+          // }
+          // if(positionFromTop - windowHeight > 0){
+          //   element.classList.add('hidden');
+          //   element.classList.remove('fade-in-element');
+          //   element.classList.remove('fade-in-element-top');
+          // }
+          // if(positionFromBottom < 0){
+          //   element.classList.add('hidden');
+          //   element.classList.remove('fade-in-element');
+          //   element.classList.remove('fade-in-element-top');
+          // }
         }
       }
     

@@ -8,7 +8,7 @@ let SectionTwo = (props) => {
             <div className="content hidden">
             <h1>About</h1>
             <h2 id="about">
-                I'm a JavaScript, React.js, and Rails web developer based in Seattle with some experience in Python, Java (and Android), C++, and PHP. I started programming in 2010 at the University of Michigan and have been involved in tech ever since. Whether working in the industry, spending my free time and days off learning a new language, or teaching myself Android app development. My brain craves the challenge of learning and problem solving while having a tangible result to be proud of. I have an artistic side with terrible painting skills so I express my creativity through design and photography.  
+                I'm a JavaScript, React.js, and Rails web developer based in Seattle with some experience in Python, Java (and Android), C++, and PHP. I started programming in 2010 at the University of Michigan and have been involved in tech ever since. Whether working in the industry, spending my free time and days off practicing a new language, reading documentation or teaching myself Android app development, my brain craves the challenge of learning and problem solving while having a tangible result to be proud of.  
             </h2>
             <div id="skills">
                 <h1>Skills</h1>
