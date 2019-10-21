@@ -21,7 +21,6 @@ export default class App extends React.Component {
         for (var i = 0; i < elements.length; i++) {
           let element = elements[i];
           let positionFromTop = elements[i].getBoundingClientRect().top;
-          console.log("top", positionFromTop)
           let positionFromBottom = elements[i].getBoundingClientRect().bottom;
     
           if(positionFromTop - windowHeight <= 0 && positionFromBottom > 0) {

@@ -55,6 +55,8 @@ export default class sectionOne extends React.Component{
             expanded: false,
             expandedId: null,
         })
+        let projectDiv = document.getElementById("one");
+        projectDiv.scrollIntoView();
     }
 
     render(){
