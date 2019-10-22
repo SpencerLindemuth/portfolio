@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import NavBar from './Components/ViewComponents/navBar'
+import LandingPage from './Components/ContentComponents/landingPage'
 import SectionOne from './Components/ContentComponents/sectionOne'
 import SectionTwo from './Components/ContentComponents/sectionTwo'
 import SectionThree from './Components/ContentComponents/sectionThree'
@@ -54,7 +54,7 @@ export default class App extends React.Component {
   render(){
     return (
       <div className="App">
-          <NavBar />
+          <LandingPage />
           <SectionOne slowScroll={this.slowScroll} />
           <SectionTwo />
           <SectionThree />
