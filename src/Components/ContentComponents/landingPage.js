@@ -17,6 +17,10 @@ export default class LandingPage extends React.Component{
                 let resume = document.getElementById("resume-div")
                 resume.scrollIntoView({behavior: "smooth"})
                 break;
+            default:
+                let arrow = document.getElementById("project-div")
+                arrow.scrollIntoView({behavior: "smooth"})
+                break;
         }
 
     }
@@ -36,7 +40,7 @@ export default class LandingPage extends React.Component{
                         <span> | </span>
                         <span onClick={this.scrollClick}>Contact</span>
                     </div>
-                    <div class="arrow-bounce"></div>
+                    <div onClick={this.scrollClick} id="arrow" class="arrow-bounce"></div>
                 </div>
             </div>
         )
