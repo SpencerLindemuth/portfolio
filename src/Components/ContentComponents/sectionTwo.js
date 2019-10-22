@@ -4,7 +4,7 @@ import StarRegular from '../../Images/star-regular.svg'
 
 let SectionTwo = (props) => {
     return (
-        <div className="parallax Two">
+        <div className="parallax Two" id="about-div">
             <div className="content hidden">
             <h1>About</h1>
             <h2 id="about">

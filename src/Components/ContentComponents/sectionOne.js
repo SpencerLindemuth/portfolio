@@ -61,9 +61,8 @@ export default class sectionOne extends React.Component{
 
     render(){
         return (
-            <div className="parallax One">
-                <video src={starvideo} type="video/mp4" autoPlay={true} id="bg-one" loop={true} preload={true}/>
-                <div class="arrow-bounce"></div>
+            <div className="parallax one" id="project-div">
+                {/* <video src={starvideo} type="video/mp4" autoPlay={true} id="bg-one" loop={true} preload={true}/> */}
                 <div className="content hidden">
                     <h1>Projects</h1>
                     {!this.state.expanded ? <div id="projectGrid">{this.state.projects.map(project => {
