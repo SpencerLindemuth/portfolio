@@ -5,6 +5,7 @@ import LandingPage from './Components/ContentComponents/landingPage'
 import SectionOne from './Components/ContentComponents/sectionOne'
 import SectionTwo from './Components/ContentComponents/sectionTwo'
 import SectionThree from './Components/ContentComponents/sectionThree'
+import SectionFour from './Components/ContentComponents/sectionFour'
 
 export default class App extends React.Component {
 
@@ -58,6 +59,7 @@ export default class App extends React.Component {
           <SectionOne slowScroll={this.slowScroll} />
           <SectionTwo />
           <SectionThree />
+          <SectionFour />
       </div>
     );
   }
