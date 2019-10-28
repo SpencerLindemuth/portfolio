@@ -18,7 +18,7 @@ export default class LandingPage extends React.Component{
                 resume.scrollIntoView({behavior: "smooth"})
                 break;
             default:
-                let arrow = document.getElementById("project-div")
+                let arrow = document.getElementById("contact-div")
                 arrow.scrollIntoView({behavior: "smooth"})
                 break;
         }

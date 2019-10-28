@@ -32,12 +32,19 @@
 }
 
 .Two{
-  background-image: url("");
+  background-image: url("./Images/emp.jpg");
+  padding-bottom: 40%;
 }
 
 .Three{
-  background-image: url("");
+  background-image: url("./Images/two.jpg");
   height: 1200px;
+  padding-bottom: 50%;
+}
+
+.Four{
+  /* padding-bottom: 40%;
+  height: 0vh; */
 }
 
 .hidden{
@@ -121,6 +128,11 @@
 
 #page-nav{
   padding-top: 10%;
+}
+
+#page-nav span:hover{
+  cursor: pointer;
+  color: gray;
 }
 
 #projectGrid{
@@ -238,6 +250,55 @@
 #resume{
   width: 80%;
   overflow: hidden;
+}
+
+#contact-content{
+  color: white;
+  height: 50vh;
+}
+
+#message{
+  outline-color: salmon;
+  width: 40%;
+  height: 30vh;
+  text-align: start;
+  padding: 1%;
+  font-size: 1.5em;
+  border-style: none;
+  border-radius: 4px;
+  margin-bottom: 3%;
+}
+
+.contact-input{
+  font-size: 1.5em;
+  padding: 1%;
+  border-style: solid;
+  border-color: transparent transparent salmon transparent;
+  outline-color: salmon;
+  background-color: transparent;
+  color: white;
+  width: 30%;
+  margin-top: -1%;
+  margin-bottom: 3%;
+}
+
+.next-button{
+  font-size: 1.5em;
+  font-weight: 100;
+  color: white;
+  width: 15.5%;
+  background-color: salmon;
+  border-style: none;
+  border-radius: 4px;
+  height: 5vh;
+  margin: .5%;
+}
+
+#error{
+  margin-top: -1%;
+  height: 2vh;
+  font-size: 2vh;
+  color: red;
 }
 
 @keyframes bounce {
