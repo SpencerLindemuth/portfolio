@@ -43,9 +43,8 @@
 }
 
 .Four{
-  background-image: url('./Images/two.jpg');
-  padding-bottom: 40%;
-  height: 0vh;
+  /* padding-bottom: 40%;
+  height: 0vh; */
 }
 
 .hidden{
