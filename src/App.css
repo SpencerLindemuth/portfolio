@@ -270,6 +270,15 @@
   margin-bottom: 3%;
 }
 
+.next-button{
+  color: white;
+  width: 11%;
+  background-color: salmon;
+  border-style: none;
+  border-radius: 4px;
+  height: 5vh;
+}
+
 @keyframes bounce {
   0% {margin-top: 0px;}
   25% {margin-top: -2.5px;}

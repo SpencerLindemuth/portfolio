@@ -6,7 +6,7 @@ let lastName = (props) => {
         <div id="lastname-field">
             <input type="text" placeholder="Last Name" className="contact-input" id="lastName" value={props.value} onChange={props.handleChange}></input>
             <br />
-            <button type="button" onClick={() => props.next(2)}>Next -></button>
+            <button type="button" className="next-button" onClick={() => props.next(2)}>Next -></button>
         </div>
     )
 }
