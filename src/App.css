@@ -272,11 +272,12 @@
 
 .next-button{
   color: white;
-  width: 11%;
+  width: 14%;
   background-color: salmon;
   border-style: none;
   border-radius: 4px;
   height: 5vh;
+  margin: 2%;
 }
 
 @keyframes bounce {
