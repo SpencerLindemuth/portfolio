@@ -62,12 +62,13 @@ export default class sectionOne extends React.Component{
     render(){
         return (
             <div className="parallax one" id="project-div">
-                {/* <video src={starvideo} type="video/mp4" autoPlay={true} id="bg-one" loop={true} preload={true}/> */}
-                <div className="content hidden">
-                    <h1>Projects</h1>
-                    {!this.state.expanded ? <div id="projectGrid">{this.state.projects.map(project => {
-                        return <ProjectCard title={project.title} background={project.image} id={project.id} description={project.description} url={project.url} gitUrl={project.gitUrl} moreClick={this.moreClick}/>
-                    })}</div> : this.expandedDiv()}
+                <div className="content">
+                    <div className="hidden">
+                        <h1>Projects</h1>
+                        {!this.state.expanded ? <div id="projectGrid">{this.state.projects.map(project => {
+                            return <ProjectCard title={project.title} background={project.image} id={project.id} description={project.description} url={project.url} gitUrl={project.gitUrl} moreClick={this.moreClick}/>
+                        })}</div> : this.expandedDiv()}
+                    </div>
                 </div>
             </div>
         )
