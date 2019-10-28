@@ -24,7 +24,8 @@ export default class SectionFour extends React.Component{
     nextClick = () => {
         this.setState({
             currentComponent: this.state.formComponents[this.state.index + 1],
-            index: this.state.index + 1
+            index: this.state.index + 1,
+            error: ""
         })
     }
 
@@ -32,6 +33,7 @@ export default class SectionFour extends React.Component{
         this.setState({
             currentComponent: this.state.formComponents[this.state.index - 1],
             index: this.state.index - 1,
+            error: ""
         })
     }
 
@@ -99,7 +101,7 @@ export default class SectionFour extends React.Component{
             <div className="parallax Four" id="contact-div">
                 <div className="content hidden" id="contact-content">
                     <h1>Contact Me!</h1>
-                    <h4>{this.state.error}</h4>
+                    <h4 id="error">{this.state.error}</h4>
                     <div id="formComponent">
                         {this.state.currentComponent === "FirstName" ? <FirstName next={this.nextClick} handleChange={this.controlField} handleValue={this.state.firstName}/>: null }
                         {this.state.currentComponent === "LastName" ? <LastName next={this.nextClick} prev={this.prevClick} handleChange={this.controlField} handleValue={this.state.lastName}/>: null }
