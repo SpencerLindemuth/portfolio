@@ -37,9 +37,9 @@
 }
 
 .Three{
-  background-image: url("./Images/leaves.jpg");
+  background-image: url("./Images/two.jpg");
   height: 1200px;
-  padding-bottom: 40%;
+  padding-bottom: 50%;
 }
 
 .Four{
@@ -254,7 +254,7 @@
 
 #contact-content{
   color: white;
-  height: 65vh;
+  height: 50vh;
 }
 
 #message{
