@@ -100,6 +100,7 @@ export default class SectionFour extends React.Component{
             this.setState({
                 currentComponent: "Submitted"
             })
+            this.handleBlur()
             this.sendEmail()
         }
     }
