@@ -292,6 +292,12 @@
   margin-right: 10%;
 }
 
+@media only screen and (max-width: 800px){
+  #about{
+    font-size: 1em;
+  }
+}
+
 #skillsList{
   list-style-type: none;
   padding-left: 0;
@@ -299,11 +305,33 @@
   grid-template-columns: repeat(4, 1fr)
 }
 
+@media only screen and (max-width: 800px){
+  #skillsList{
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+
 #skillsList li{
   height: 20vh;
   border: solid 1px white;
   border-radius: 6px;
   margin: 2%;
+}
+
+@media only screen and (max-width: 800px){
+  #skillsList li{
+    height: 18vh;
+    margin: 2%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 50%)
+  }
+
+  #skillsList li span{
+    padding-top: 4%;
+  }
 }
 
 #skillsList li:hover{
