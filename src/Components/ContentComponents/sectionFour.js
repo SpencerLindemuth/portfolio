@@ -93,7 +93,21 @@ export default class SectionFour extends React.Component{
             this.setState({
                 currentComponent: "Submitted"
             })
+            this.sendEmail()
         }
+    }
+
+    sendEmail = () =>{
+        fetch('https://portfolio-contact-backend.herokuapp.com/email', {
+            method: "POST",
+            headers: {"Content-Type" : "Application/json"},
+            body: JSON.stringify(
+                {first_name: this.state.firstName,
+                 last_name: this.state.lastName,
+                 email: this.state.email,
+                 phone: this.state.phone,
+                 message: this.state.message})
+        })
     }
 
     render(){
