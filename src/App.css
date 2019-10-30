@@ -354,10 +354,18 @@
   overflow: hidden;
 }
 
+#resume-button{
+  display: none;
+}
+
 @media only screen and (max-width: 1000px){
+
   #resume{
-    height: 40vh;
-    max-width: 80vw;
+    display: none;
+  }
+
+  #resume-button{
+    display: block;
   }
 }
 
