@@ -38,7 +38,8 @@ export default class SectionFour extends React.Component{
     }
 
     handleBlur = () => {
-        window.scrollTo(0,document.body.scrollHeight);
+        let nextButton = document.getElementsByClassName("next-button")[0]
+        nextButton.scrollIntoView()
     }
 
     controlField = (ev) => {
