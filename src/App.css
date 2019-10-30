@@ -354,6 +354,12 @@
   overflow: hidden;
 }
 
+@media only screen and (max-width: 800px){
+  #resume{
+    height: 40vh;
+  }
+}
+
 #contact-content{
   color: white;
   padding-bottom: 10%;
