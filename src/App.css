@@ -254,7 +254,8 @@
 
 #contact-content{
   color: white;
-  height: 50vh;
+  padding-bottom: 10%;
+  height: fit-content;
 }
 
 #message{
