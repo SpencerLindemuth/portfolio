@@ -4,7 +4,7 @@ import Resume from '../../Images/Resume.pdf'
 let SectionThree = (props) => {
     return (
         <div className="parallax Three" id="resume-div">
-            <div className="content">
+            <div className="content" id="resume-container">
                 <div className="hidden">
                     <h1>Resume</h1> 
                     <iframe id="resume" src={Resume} title="resume" frameBorder="0" scrolling="auto" height="1200px"/>

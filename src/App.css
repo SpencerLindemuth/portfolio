@@ -360,6 +360,10 @@
 
 @media only screen and (max-width: 1000px){
 
+  #resume-container{
+    height: 50vh;
+  }
+
   #resume{
     display: none;
   }
