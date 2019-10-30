@@ -9,7 +9,7 @@ let SectionTwo = (props) => {
                 <div className="hidden">
                     <h1>About</h1>
                     <h2 id="about">
-                        I'm a JavaScript, React.js, and Rails web developer based in Seattle with some experience in Python, Java (and Android), C++, and PHP. I started programming in 2010 at the University of Michigan and have been involved in tech ever since. Whether working in the industry, spending my free time and days off practicing a new language, reading documentation or teaching myself Android app development, my brain craves the challenge of learning and problem solving while having a tangible result to be proud of.  
+                        I'm a JavaScript, React.js, and Rails full stack engineer based in Seattle. I started programming in 2010 at the University of Michigan and have been involved in tech ever since. I'm currently looking for my next job in the industry and I spend my free time and days off practicing new languages, reading books or documentation, playing video games, taking photos, working on cars, or woodworking. The creative side of my brain loves expressing itself through my designs and photographs, while the other half craves the challenge of problem solving, chasing tangible results, and working with my hands.  These two halves combined are what make me an excellent full stack software engineer!
                     </h2>
                     <div id="skills">
                         <h1>Skills</h1>
