@@ -23,6 +23,12 @@
   padding-bottom: 40%;
 }
 
+@media only screen and (max-width: 800px){
+  .one{
+    padding-bottom: 100%;
+  }
+}
+
 #bg-one{
   position: fixed;
   top: 0;
@@ -36,10 +42,22 @@
   padding-bottom: 40%;
 }
 
+@media only screen and (max-width: 800px){
+  .Two{
+    padding-bottom: 100%;
+  }
+}
+
 .Three{
   background-image: url("./Images/two.jpg");
   height: 1200px;
   padding-bottom: 50%;
+}
+
+@media only screen and (max-width: 800px){
+  .Three{
+    padding-bottom: 100%;
+  }
 }
 
 .Four{
@@ -90,6 +108,13 @@
   z-index: 1;
 }
 
+
+@media only screen and (max-width: 800px){
+  #navbar{
+    align-items: center;
+  }
+}
+
 #navbarName{
   font-family: 'Shadows Into Light', cursive;
   padding-left: 10%;
@@ -98,11 +123,25 @@
   font-size: 2em;
 }
 
+@media only screen and (max-width: 800px){
+  #navbarName{
+    align-items: center;
+    font-size: 1.5em;
+    padding-left: 10%;
+  }
+}
+
 #navbarLinks{
   height: 100%;
   padding-right: 10%;
   align-self: flex-end;
   align-self: center;
+}
+
+@media only screen and (max-width: 800px){
+  #navbarLinks{
+    padding-right: 5%;
+  }
 }
 
 #navbarLinks img{
@@ -128,6 +167,12 @@
 
 #page-nav{
   padding-top: 10%;
+}
+
+@media only screen and (max-width: 800px){
+  #page-nav{
+    padding-top: 15%;
+  }
 }
 
 #page-nav span:hover{
