@@ -4,7 +4,7 @@ let message = (props) => {
 
     return(
         <div id="firstname-field">
-            <textarea placeholder="Message" id="message" value={props.handleValue} onChange={props.handleChange}></textarea>
+            <textarea placeholder="Message" id="message" value={props.handleValue} onChange={props.handleChange} onBlur={props.handleBlur}></textarea>
             <br />
             <button type="button" className="next-button" onClick={props.prev}>Prev</button>
             <button type="button" className="next-button" onClick={() => props.submit()}>Submit</button>

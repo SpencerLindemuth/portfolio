@@ -37,6 +37,10 @@ export default class SectionFour extends React.Component{
         })
     }
 
+    handleBlur = () => {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+
     controlField = (ev) => {
         switch(ev.target.id){
             case "firstName" :
@@ -117,11 +121,11 @@ export default class SectionFour extends React.Component{
                     <h1>Contact Me!</h1>
                     <h4 id="error">{this.state.error}</h4>
                     <div id="formComponent">
-                        {this.state.currentComponent === "FirstName" ? <FirstName next={this.nextClick} handleChange={this.controlField} handleValue={this.state.firstName}/>: null }
-                        {this.state.currentComponent === "LastName" ? <LastName next={this.nextClick} prev={this.prevClick} handleChange={this.controlField} handleValue={this.state.lastName}/>: null }
-                        {this.state.currentComponent === "Email" ? <Email next={this.nextClick} prev={this.prevClick} handleChange={this.controlField} handleValue={this.state.email}/>: null }
-                        {this.state.currentComponent === "Phone" ? <Phone next={this.nextClick} prev={this.prevClick} handleChange={this.controlField} handleValue={this.state.phone}/>: null }
-                        {this.state.currentComponent === "Message" ? <Message submit={this.submitClick} prev={this.prevClick} handleChange={this.controlField} handleValue={this.state.message}/>: null }
+                        {this.state.currentComponent === "FirstName" ? <FirstName next={this.nextClick} handleChange={this.controlField} handleBlur={this.handleBlur} handleValue={this.state.firstName}/>: null }
+                        {this.state.currentComponent === "LastName" ? <LastName next={this.nextClick} prev={this.prevClick} handleChange={this.controlField} handleBlur={this.handleBlur} handleValue={this.state.lastName}/>: null }
+                        {this.state.currentComponent === "Email" ? <Email next={this.nextClick} prev={this.prevClick} handleChange={this.controlField} handleBlur={this.handleBlur} handleValue={this.state.email}/>: null }
+                        {this.state.currentComponent === "Phone" ? <Phone next={this.nextClick} prev={this.prevClick} handleChange={this.controlField} handleBlur={this.handleBlur} handleValue={this.state.phone}/>: null }
+                        {this.state.currentComponent === "Message" ? <Message submit={this.submitClick} prev={this.prevClick} handleChange={this.controlField} handleBlur={this.handleBlur} handleValue={this.state.message}/>: null }
                         {this.state.currentComponent === "Submitted" ? <Submitted firstName={this.state.firstName} lastName={this.state.lastName} /> : null }
                     </div>
                 </div>
