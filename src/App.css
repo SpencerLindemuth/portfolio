@@ -56,7 +56,7 @@
 
 @media only screen and (max-width: 800px){
   .Three{
-    padding-bottom: 20%;
+    height: 75vh;
   }
 }
 
