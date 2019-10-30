@@ -378,6 +378,12 @@
   margin-bottom: 3%;
 }
 
+@media only screen and (max-width: 800px){
+  #message{
+    width: 70%;
+  }
+}
+
 .contact-input{
   font-size: 1.5em;
   padding: 1%;
@@ -389,6 +395,12 @@
   width: 30%;
   margin-top: -1%;
   margin-bottom: 3%;
+}
+
+@media only screen and (max-width: 800px){
+  .contact-input{
+    width: 70%;
+  }
 }
 
 .next-button{
