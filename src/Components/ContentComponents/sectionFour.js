@@ -41,7 +41,7 @@ export default class SectionFour extends React.Component{
         setTimeout(() => {
             let nextButton = document.getElementsByClassName("next-button")[0]
             nextButton.scrollIntoView()  
-        }, 300);
+        }, 100);
     }
 
     controlField = (ev) => {

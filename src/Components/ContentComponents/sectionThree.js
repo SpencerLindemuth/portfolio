@@ -8,7 +8,7 @@ let SectionThree = (props) => {
                 <div className="hidden">
                     <h1>Resume</h1> 
                     <iframe id="resume" src={Resume} title="resume" frameBorder="0" scrolling="auto" height="1200px"/>
-                    <a href="https://learn.co/bold-memory-9937/resume" alt="link to resume" id="resume-button"><button className="next-button">View</button></a>
+                    <a href="https://learn.co/bold-memory-9937/resume" alt="link to resume" id="resume-button"><button className="button">View</button></a>
                 </div>
             </div>
         </div>
