@@ -172,6 +172,7 @@
 @media only screen and (max-width: 800px){
   #page-nav{
     padding-top: 15%;
+    font-size: 1em;
   }
 }
 
