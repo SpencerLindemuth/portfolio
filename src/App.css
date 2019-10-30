@@ -56,7 +56,7 @@
 
 @media only screen and (max-width: 800px){
   .Three{
-    padding-bottom: 100%;
+    padding-bottom: 50%;
   }
 }
 
@@ -366,6 +366,12 @@
   height: fit-content;
 }
 
+@media only screen and (max-width: 800px){
+  #contact-content{
+    padding-bottom: 30%;
+  }
+}
+
 #message{
   outline-color: salmon;
   width: 40%;
@@ -413,6 +419,12 @@
   border-radius: 4px;
   height: 5vh;
   margin: .5%;
+}
+
+@media only screen and (max-width: 800px){
+  .next-button{
+    width: 36%;
+  }
 }
 
 #error{
