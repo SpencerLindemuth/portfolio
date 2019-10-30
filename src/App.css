@@ -424,6 +424,8 @@
 @media only screen and (max-width: 800px){
   .next-button{
     width: 36%;
+    height: fit-content;
+    padding: 5%;
   }
 }
 
