@@ -187,12 +187,25 @@
   justify-items: center;
 }
 
+@media only screen and (max-width: 800px){
+  #projectGrid{
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+}
+
 .card{
   background-color: white;
   color: #282c34;
   width: 80%;
   padding: 5%;
   border-radius: 6px;
+}
+
+@media only screen and (max-width: 800px){
+  .card{
+    margin-bottom: 5%;
+  }
 }
 
 .card img{
@@ -213,6 +226,13 @@
   font-size: 1em;
   width: 30%;
   margin-left: 35%;
+}
+
+@media only screen and (max-width: 800px){
+  .tech-use{
+    width: 100%;
+    margin-left: 0;
+  }
 }
 
 .card a{
@@ -247,6 +267,14 @@
   width: 90%;
   margin-left: 10%;
   margin-right: 10%;
+}
+
+@media only screen and (max-width: 800px){
+  #expandedCard{
+    width: 100%;
+    margin-left: 5%;
+    margin-right: 0;
+  }
 }
 
 #expandedCard img{
