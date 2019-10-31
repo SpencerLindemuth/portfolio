@@ -10,6 +10,11 @@ import ReactGA from 'react-ga'
 
 export default class App extends React.Component {
 
+  initializeReactGA = () => {
+    ReactGA.initialize('UA-151315787-1');
+    ReactGA.pageview('/homepage');
+  }
+
   slowScroll = () => {
       let elements;
       let windowHeight;
@@ -67,9 +72,6 @@ export default class App extends React.Component {
 
   componentDidMount = () => {
     this.slowScroll()
-    initializeReactGA = () => {
-      ReactGA.initialize('UA-151315787-1');
-      ReactGA.pageview('/homepage');
-    }
+    this.initializeReactGA()
   }
 }
