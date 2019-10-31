@@ -6,6 +6,7 @@ import SectionOne from './Components/ContentComponents/sectionOne'
 import SectionTwo from './Components/ContentComponents/sectionTwo'
 import SectionThree from './Components/ContentComponents/sectionThree'
 import SectionFour from './Components/ContentComponents/sectionFour'
+import ReactGA from 'react-ga'
 
 export default class App extends React.Component {
 
@@ -66,5 +67,9 @@ export default class App extends React.Component {
 
   componentDidMount = () => {
     this.slowScroll()
+    initializeReactGA = () => {
+      ReactGA.initialize('UA-151315787-1');
+      ReactGA.pageview('/homepage');
+    }
   }
 }
