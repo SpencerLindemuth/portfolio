@@ -11,7 +11,7 @@ let SectionTwo = (props) => {
                     <h2 id="about">
                         I'm a JavaScript, React.js, and Rails full stack engineer based in Seattle. I started programming in 2010 at the University of Michigan and have been involved in tech ever since. I'm currently looking for my next job in the industry and I spend my free time and days off practicing new languages, reading books or documentation, playing video games, taking photos, working on cars, or woodworking. The creative side of my brain loves expressing itself through my designs and photographs, while the other half craves the challenge of problem solving, chasing tangible results, and working with my hands.  These two halves combined are what make me an excellent full stack software engineer!
                     </h2>
-                    <div id="skills">
+                    {/* <div id="skills">
                         <h1>Skills</h1>
                         <ul id="skillsList">
                             <li>
@@ -55,7 +55,7 @@ let SectionTwo = (props) => {
                                 <span className="rating"><img src={StarSolid}/><img src={StarRegular}/><img src={StarRegular}/><img src={StarRegular}/><img src={StarRegular}/></span>
                             </li>
                         </ul>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>
